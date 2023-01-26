@@ -3,18 +3,27 @@
     <head>
         <meta charset="UTF-8">
         <title>Booki</title>
+        <link href="style.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/f2b2f2f42e.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body class="container">
     <!--Header-->
         <header>
             <nav>
                 <a href="">
-                    <img src="mettre logo">
+                    <img src="image/logo/Booki.png" class="logo">
                 </a>
-                <div id="nav_bar">
-                    <a href="#">Hébergement</a>
-                    <a href="#">Activités</a>
-                </div>
+                <ul id="nav_bar">
+                    <li>
+                        <a href="#">Hébergement</a>
+                    </li>
+                    <li>
+                        <a href="#">Activités</a>
+                    </li>
+                </ul>
             </nav>
         </header>
     <!--Fin Header-->
@@ -25,21 +34,26 @@
         </div>
         
         <form id="search">
+            <i class="fa-solid fa-location-dot" id="search_dot"></i>
             <input id="search_input" type="text" placeholder="Marseille, France">
             <button id="button_search" type="submit">Rechercher</button>
+            <i id="button_search_icon" class="fa-solid fa-magnifying-glass"></i>
         </form>
 
-        <div class="search_filter">
+        <section class="search_filter">
             <h2>Filtres</h2>
-            <div>
-                <div>Economique</div>
-                <div>Familial</div>
-                <div>Romantique</div>
-                <div>Animaux Autorisés</div>
-            </div>
-        </div>
+            <ul>
+                <li><i class="fas fa-money-bill-wave"></i>Economique</li>
+                <li><i class="fas fa-child"></i>Familial</li>
+                <li><i class="fas fa-heart"></i>Romantique</li>
+                <li><i class="fas fa-dog"></i>Animaux Autorisés</li>
+            </ul>
+        </section>
 
-        <div class="information"><p>Plus de 500 logements sont disponibles dans cette ville</p></div>
+        <div class="information">
+            <i class="fas fa-info" id="info"></i>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
 
     <!--Hébergement-->
     
@@ -48,13 +62,13 @@
     <section class="section_content">
         <div class="hebergements">
             <h3>Hébergement à Marseille</h3>
-            <div class="card-hebergement">
-                <div class="card">
+            <div class="hebergements">
+                <article class="hebergement-card">
                     <h4>Auberge de la Cannebière</h4>
                     <!--Image ici ?-->
                     <p>Nuit à partir de <b>25€</b></p>
                     <!--icone d'étoiles ici ?-->
-                </div>
+                </article>
                 <div class="card">
                     <h4>Hôtel du port</h4>
                     <!--Image ici ?-->
