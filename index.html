@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
     <body class="container">
     <!--Header-->
@@ -18,10 +19,10 @@
                 </a>
                 <ul id="nav_bar">
                     <li>
-                        <a href="#">Hébergement</a>
+                        <a href="#hebergements">Hébergement</a>
                     </li>
                     <li>
-                        <a href="#">Activités</a>
+                        <a href="#activites">Activités</a>
                     </li>
                 </ul>
             </nav>
@@ -59,46 +60,52 @@
     
     <!--Hébergement card-->
 
-    <section class="section_content">
+    <section class="section_content" id="hebergements">
         <div class="hebergements">
             <h3>Hébergement à Marseille</h3>
             <div class="hebergements">
                 <article class="hebergement-card">
+                    <img src="image/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="card_img">
                     <h4>Auberge de la Cannebière</h4>
-                    <!--Image ici ?-->
                     <p>Nuit à partir de <b>25€</b></p>
-                    <!--icone d'étoiles ici ?-->
+                    <div class="star">
+                    <i class="fas fa-star star_blue"></i>
+                    <i class="fas fa-star star_blue"></i>
+                    <i class="fas fa-star star_blue"></i>
+                    <i class="fas fa-star star_blue"></i>
+                    <i class="fas fa-star star_grey"></i>
+                </div>
                 </article>
-                <div class="card">
+                <article class="hebergement-card">
                     <h4>Hôtel du port</h4>
                     <!--Image ici ?-->
                     <p>Nuit à partir de <b>52€</b></p>
                     <!--icone d'étoiles ici ?-->
-                </div>
-                <div class="card">
+                </article>
+                <article class="hebergement-card">
                     <h4>Hôtel les mouettes</h4>
                     <!--Image ici ?-->
                     <p>Nuit à partir de <b>76€</b></p>
                     <!--icone d'étoiles ici ?-->
-                </div>
-                <div class="card">
+                </article>
+                <article class="hebergement-card">
                     <h4>Hôtel de la mer</h4>
                     <!--Image ici ?-->
                     <p>Nuit à partir de <b>46€</b></p>
                     <!--icone d'étoiles ici ?-->
-                </div>
-                <div class="card">
+                </article>
+                <article class="hebergement-card">
                     <h4>Auberge Le Panier</h4>
                     <!--Image ici ?-->
                     <p>Nuit à partir de <b>23€</b></p>
                     <!--icone d'étoiles ici ?-->
-                </div>
-                <div class="card">
+                </article>
+                <article class="hebergement-card">
                     <h4>Hôtel chez Amina</h4>
                     <!--Image ici ?-->
                     <p>Nuit à partir de <b>96€</b></p>
                     <!--icone d'étoiles ici ?-->
-                </div>
+                </article>
                 <a href="#">Afficher plus</a>
             </div>
         </div>
@@ -130,7 +137,7 @@
         </div>
     </section>
     <!--Activités à Marseille-->
-    <section class="activities">
+    <section class="activities" id="activites">
         <h3>Activités à Marseille</h3>
         <div class="activities_list">
             <div class="activities_card">
