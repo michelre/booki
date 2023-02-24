@@ -274,7 +274,7 @@ h1 {
 
 .pop_card {
     display: flex;
-    /*height: 144px;*/
+    height: 144px;
     width: 100%;
     background-color: white;
     padding: 4px;
@@ -428,6 +428,7 @@ footer a {
 
     .pop_card {
         width: 30%;
+        height: auto;
     }
 
     .pop_list {
@@ -461,4 +462,167 @@ footer a {
         padding-left: 8px;
     }
 
+}
+
+
+/*               RESPONSIVE TELEPHONE                */
+
+
+@media all and (max-width: 768px) {
+
+    .search_filter{
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .search_filter li{
+        width: 30%;
+    }
+    
+    .container {
+        margin: 0;
+    }
+
+    .pop_container{
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .section_content{
+        padding: 0;
+        flex-wrap: wrap-reverse;
+    }
+    
+    .pop_list{
+        flex-wrap: wrap;   
+    }
+    
+    .pop_card{
+        width: 100%;
+    }
+
+    .pop_card {
+        width: 100%;
+        height: 185px;
+        margin: 0 0 31px 0;
+    }
+
+    .heb_container{
+        width: 100%;
+        background-color: white;
+        flex-wrap: wrap;
+    }
+
+    .heb_card{
+        width: 100%;
+    }
+
+    #button_search{
+        display: none;
+    }
+    
+    #button_search_icon{
+        display: flex;
+        background-color: #0065fc;
+        color: white;
+        border: none;
+        border-radius: 0 15px 15px 0;
+        cursor: pointer;
+        padding: 0 12px;
+        align-items: center;
+    }
+
+    #nav_bar{
+        width: 100%;
+    }
+
+    nav{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .logo{
+        margin: 0 0 50px 0;
+    }
+
+    #nav_bar a:last-child{
+        margin: 0;
+        padding: 0;
+    }
+    
+    #nav_bar li{
+        text-align: center;
+        width: 50%;
+    }
+
+    .trait-bleu{
+        padding-bottom: 23px;
+        border-bottom: solid 3px #0065FC;
+    }
+
+    .trait-gris{
+        padding-bottom: 23px;
+        border-bottom: solid 3px #F2F2F2;
+    }
+
+    .trait-bleu a{
+        text-decoration: none;
+        color: #0065FC;
+    }
+
+    .trait-gris a{
+        text-decoration: none;
+        color: black;
+    }
+
+    #main_top p, #search, h1, .search_filter h2, .information, h3{
+        padding-left: 20px;
+    }
+
+    .activities_card{
+        background-color: white;
+        border-radius: 20px;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.3));
+        width: 100%;
+        margin: 30px 20px 0 20px; ;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .activities_list{
+        flex-wrap: wrap;
+    }
+
+    .activities_card:last-child {
+        margin: 30px 20px 0 20px; ;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    .footer_mid{
+        margin: 0;
+        width: 100%;
+    }
+    
+    .footer_left{
+        width: 100%;
+    }
+
+    .footer_right{
+        width: 100%;
+    }
+
+    .heb_container{
+        padding: 30px 20px 0 20px; 
+    }
+
+    .search_filter li{
+        margin-bottom: 5px;
+    }
+
+    #nav_bar a:hover{
+        border: none;
+    }
 }
